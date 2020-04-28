@@ -1,12 +1,20 @@
 import React from 'react';
-import "../Sass/Components/_reset.scss"
+import axios from 'axios';
 
-function Api() {
-  return (
-    <div>
-      <p>Test api</p>
-    </div>
-  );
+export async function getApi(url) {
+    try {
+        return await axios.get(`https://coronavirus-tracker-api.herokuapp.com/${url}`);
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-export default Api;
+export async function getApiWithParams(url, params) {
+    try {
+        return await axios.get(`https://coronavirus-tracker-api.herokuapp.com/${url}`, {params});
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
