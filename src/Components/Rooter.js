@@ -1,20 +1,23 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, {Component, lazy, Suspense} from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Spinner from "./Spinner";
 
-import Test from '../Components/Test';
-import ReactTest from '../Components/ReactTest'
+const HomePage = lazy(() => import("../Pages/HomePage"));
+const CountryPage = lazy(() => import("../Pages/CountryPage"));
 
 class Rooter extends Component {
-    render(){
-        
+    render() {
+
         const Root = () => (
             <Switch>
-                <Route exact path="/test" component={Test} />
-                <Route exact path="/" component={ReactTest} />
+                <Suspense fallback={<Spinner/>}>
+                    <Route exact path="/country" component={CountryPage}/>
+                    <Route exact path="/" component={HomePage}/>
+                </Suspense>
             </Switch>
         )
 
-        return(
+        return (
             <Router>
                 <Root/>
             </Router>
