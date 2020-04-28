@@ -1,9 +1,8 @@
-import React from 'react';
 import axios from 'axios';
 
-export async function getApi(url) {
+export async function getApiEndpoint(endpoint) {
     try {
-        return await axios.get(`https://coronavirus-tracker-api.herokuapp.com/${url}`);
+        return await axios.get(`https://coronavirus-tracker-api.herokuapp.com${endpoint}`);
     } catch (error) {
         console.error(error);
     }
