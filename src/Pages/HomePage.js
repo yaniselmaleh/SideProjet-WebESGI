@@ -5,14 +5,15 @@ const HomePage = () => {
 
     const [nbDeaths, setNbDeaths] = useState(0);
 
+
     useEffect(() => {
         getApi('deaths')
-            .then((data) => console.log(data))
+            .then(response => setNbDeaths(response.data.latest))
     }, [])
 
     return (
         <div>
-            Home Page
+            {nbDeaths}
         </div>
     );
 }
