@@ -3,7 +3,7 @@ import {getApiEndpoint} from '../Components/api';
 import {numberWithCommas} from '../Utils/utils';
 
 
-export default class Test extends React.Component {
+export default class HomePageClass extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,8 +29,7 @@ export default class Test extends React.Component {
 
     render() {
         const {nbDeaths, nbConfirmed, nbRecovered, countryList} = this.state;
-        const options = countryList.map(country => `<option value=${country}>${country}</option>`);
-        console.log(options)
+        const options = countryList.map((country, index) => <option key={index} value={country}>{country}</option>);
         return (
             <div>
                 <p>Nombre de cas : {nbDeaths}</p>

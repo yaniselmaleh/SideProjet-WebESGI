@@ -2,7 +2,7 @@ import React, {Component, lazy, Suspense} from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Spinner from "./Spinner";
 
-const HomePage = lazy(() => import("../Pages/HomePage"));
+const HomePage = lazy(() => import("../Pages/HomePageClass"));
 const CountryPage = lazy(() => import("../Pages/CountryPage"));
 
 class Rooter extends Component {
