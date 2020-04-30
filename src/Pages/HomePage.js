@@ -1,9 +1,9 @@
 import React from "react";
-import {getApiEndpoint} from '../Components/api';
+import {getApiEndpoint} from '../Utils/api';
 import {numberWithCommas} from '../Utils/utils';
 
 import Cta from "../Components/layout/Cta.js"
-import Navbar from "../Components/layout/Navbar";
+import Navbar from "../Components/Navbar";
 
 export default class HomePage extends React.Component {
     constructor(props) {

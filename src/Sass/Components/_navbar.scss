@@ -1,0 +1,35 @@
+@import "../helpers/variables";
+
+.navbar {
+  background-color: $white;
+  box-shadow: $shadow;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__logo {
+
+  }
+
+  &__content {
+
+    display: flex;
+
+    & .cta-filled-blue {
+      display: inline-block;
+    }
+  }
+
+  &__link:link,
+  &__link:visited{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $blue;
+  }
+
+}
