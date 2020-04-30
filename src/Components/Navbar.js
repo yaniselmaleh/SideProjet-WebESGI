@@ -8,7 +8,9 @@ const Navbar = () => {
 
     return (
         <nav className='navbar'>
-            <Logo />
+            <div className='navbar__logo'>
+                <Logo />
+            </div>
             <div className="navbar__content">
                 <Link to="/test" className='navbar__link'>Comment le Covid-19 se transmet</Link>
                 <Link to="/test" className='navbar__link'>Signes du Covid-19</Link>
