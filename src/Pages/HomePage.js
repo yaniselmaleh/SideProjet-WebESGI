@@ -1,47 +1,52 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {getApiEndpoint} from '../Components/api';
 import {numberWithCommas} from '../Utils/utils';
 
-const HomePage = () => {
+import Cta from "../Components/layout/Cta.js"
+import Navbar from "../Components/layout/Navbar";
 
-    const [nbDeaths, setNbDeaths] = useState(0);
-    const [nbConfirmed, setNbConfirmed] = useState(0);
-    const [nbRecovered, setNbRecovered] = useState(0);
-    const [countryList, setCountryList] = useState([]);
-    const [countryOptions, setCountryOptions] = useState([]);
-
-
-    useEffect(() => {
-        getApiEndpoint('/deaths').then(response => setNbDeaths(numberWithCommas(response.data.latest)));
-        getApiEndpoint('/confirmed').then(response => setNbConfirmed(numberWithCommas(response.data.latest)));
-        getApiEndpoint('/recovered').then(response => setNbRecovered(numberWithCommas(response.data.latest)))
-        getApiEndpoint('/v2/locations').then(response => getCountryList(response))
-    }, [])
-
-
-    const getCountryList = response => {
-        const locationsList = response.data.locations.map(location => location.country)
-        const locations = Array.from(new Set(locationsList));
-        const options = locations.map((location, index) => {
-            return <option key={index} value={location}>{location}</option>
-        });
-        setCountryList(locations);
-        setCountryOptions(options);
+export default class HomePage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            nbDeaths: 0,
+            nbConfirmed: 0,
+            nbRecovered: 0,
+            countryList: []
+        }
     }
 
+    componentDidMount() {
+        getApiEndpoint('/deaths').then(response => this.setState({nbDeaths: numberWithCommas(response.data.latest)}));
+        getApiEndpoint('/confirmed').then(response => this.setState({nbConfirmed: numberWithCommas(response.data.latest)}));
+        getApiEndpoint('/recovered').then(response => this.setState({nbRecovered: numberWithCommas(response.data.latest)}));
+        getApiEndpoint('/v2/locations').then(response => this.getCountryList(response));
+    }
 
-    return (
-        <>
-            <div>
-                <p>Nombre de cas : {nbDeaths}</p>
+    getCountryList(response) {
+        const locationsList = response.data.locations.map(location => location.country)
+        const locations = Array.from(new Set(locationsList));
+        this.setState({countryList: locations})
+    }
+
+    render() {
+        const {nbDeaths, nbConfirmed, nbRecovered, countryList} = this.state;
+        const options = countryList.map((country, index) => <option key={index} value={country}>{country}</option>);
+        return (
+            <>
+                <Navbar />
+{/*                <p>Nombre de cas : {nbDeaths}</p>
                 <p>Nombre de morts : {nbConfirmed}</p>
                 <p>Nombre de guéris : {nbRecovered}</p>
+
                 <select style={{width: '25%'}}>
-                    {countryOptions}
+                    {options}
                 </select>
-            </div>
-        </>
-    )
+
+                <Cta name="En savoir plus ?" title="En savoir plus ?" className="filled-blue" url="/test"/>*/}
+            </>
+        )
+    }
 }
 
-export default HomePage;
+
