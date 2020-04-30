@@ -8,6 +8,7 @@ import Card from "../Components/layout/Card.js"
 import TestImg from "../logo.svg"
 import "../Sass/Components/_grid.scss";
 import "../Sass/Components/_reset.scss";
+import Navbar from "../Components/Navbar";
 
 export default class HomePage extends React.Component {
     constructor(props) {
@@ -37,8 +38,11 @@ export default class HomePage extends React.Component {
         const {nbDeaths, nbConfirmed, nbRecovered, countryList} = this.state;
         const options = countryList.map((country, index) => <option key={index} value={country}>{country}</option>);
         return (
-            <div>
-                <p>Nombre de cas : {nbDeaths}</p>
+            <>
+                <header>
+                    <Navbar />
+                </header>
+{/*                <p>Nombre de cas : {nbDeaths}</p>
                 <p>Nombre de morts : {nbConfirmed}</p>
                 <p>Nombre de guéris : {nbRecovered}</p>
 
@@ -66,8 +70,8 @@ export default class HomePage extends React.Component {
                     <article className="col-4 card">
                         <Card title="Début de fièvre" texte="Présente chez 88% des malades, elle se situe autour de 37,5-38°" icon={TestImg} alt="alt de base"></Card>
                     </article>
-                </section>
-            </div>
+                </section>*/}
+            </>
         )
     }
 }
