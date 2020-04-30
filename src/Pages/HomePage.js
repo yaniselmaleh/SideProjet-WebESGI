@@ -64,19 +64,8 @@ export default class HomePage extends React.Component {
                     </section>
                 </section>
 
-                <section>
                     <Signes/>
-                </section>
-
-                <section>
                     <Soignants/>
-                </section>
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
                 {/* <select style={{width: '25%'}}>
                     {options}
                 </select> */}
