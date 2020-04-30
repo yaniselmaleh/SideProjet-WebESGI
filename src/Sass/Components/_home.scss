@@ -1,0 +1,86 @@
+@import "../helpers/variables";
+
+#home{
+    background-image: url("../../images/corona-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $blue;
+    padding: $XL * 2;
+    margin: 1%;
+    border-radius: $radius-l;
+    -webkit-border-radius: $radius-l;
+    -moz-border-radius: $radius-l;
+    -ms-border-radius: $radius-l;
+    -o-border-radius: $radius-l;
+
+    h1{
+        font-family: $titre;
+        font-size: 60px;
+        color: $white;
+        text-align: center;
+    }
+
+    p{
+        font-family: $labeur;
+        font-size: 20px;
+        color: $grey;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.16;
+        letter-spacing: normal;
+        text-align: center;
+        margin-bottom: $L;
+    }
+
+    span{
+        font-family: $labeur;
+        color: $blue;
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+
+        b{
+            font-size: 45px;
+        }
+    }
+
+    section{
+        position: relative;
+        overflow: hidden;
+        background-color: $white;
+        padding: $M;
+        box-shadow: $shadow;
+        border-radius: $radius-xl;
+        -webkit-border-radius: $radius-l;
+        -moz-border-radius: $radius-l;
+        -ms-border-radius: $radius-l;
+        -o-border-radius: $radius-l;
+
+        img:first-child{
+            position: absolute;
+            bottom: -35%;
+            right: -5%;
+        }
+
+        img:last-child{
+            position: absolute;
+            bottom: -35%;
+            left: -5%;
+        }
+
+        #nbDeaths{
+            color: $red;
+        }
+
+        #nbConfirmed{
+            color: $green;
+        }
+
+        #nbRecovered{
+            color: $blue;
+        }
+    }
+}
