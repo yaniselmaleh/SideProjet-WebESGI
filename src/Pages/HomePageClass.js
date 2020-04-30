@@ -2,6 +2,7 @@ import React from "react";
 import {getApiEndpoint} from '../Components/api';
 import {numberWithCommas} from '../Utils/utils';
 
+import Cta from "../Components/layout/Cta.js"
 
 export default class HomePageClass extends React.Component {
     constructor(props) {
@@ -39,6 +40,8 @@ export default class HomePageClass extends React.Component {
                 <select style={{width: '25%'}}>
                     {options}
                 </select>
+
+                <Cta name="En savoir plus ?" title="En savoir plus ?" className="filled-blue" url="/test"/>
             </div>
         )
     }
