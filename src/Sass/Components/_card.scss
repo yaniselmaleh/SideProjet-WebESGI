@@ -1,0 +1,29 @@
+@import "../helpers/variables.scss";
+
+.card {
+    background-color: $white;
+    text-align: center;
+    padding: $M $S;
+    border-radius: $radius-l;
+    -webkit-border-radius: $radius-l;
+    -moz-border-radius: $radius-l;
+    -ms-border-radius: $radius-l;
+    -o-border-radius: $radius-l;
+    line-height: 1.2;
+    box-shadow: $shadow;
+
+    img{
+        padding: $S 0%;
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-family: $titre;
+        margin-bottom: $S;
+    }
+
+    p, span, b, strong {
+        font-family: $labeur;
+        display: block;
+        margin: auto;
+    }
+}

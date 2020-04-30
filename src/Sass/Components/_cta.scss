@@ -1,0 +1,37 @@
+@import "../helpers/variables.scss";
+
+// cta de base
+.cta {
+    color: $white;
+    padding: .8% 10px;
+    font-family: $titre;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: $radius-xl;
+    -webkit-border-radius: $radius-xl;
+    -moz-border-radius: $radius-xl;
+    -ms-border-radius: $radius-xl;
+    -o-border-radius: $radius-xl;
+}
+
+// rempli bleu
+.cta-filled-blue {
+    @extend .cta;
+    background-color: $blue;
+    border: 3px solid $blue;
+}
+
+// rempli blanc
+.cta-filled-white {
+    @extend .cta;
+    color: $blue;
+    background-color: $white;
+    border: 3px solid white;
+}
+
+// non rempli
+.cta-unfilled {
+    @extend .cta;
+    color: $blue;
+    border: 3px solid $blue;
+}

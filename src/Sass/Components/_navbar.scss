@@ -1,0 +1,44 @@
+@import "../helpers/variables";
+
+.navbar {
+  background-color: $white;
+  box-shadow: $shadow;
+  padding: 5px 40px;
+
+  @media all and (max-width: $tablette) {
+    padding: 5px 30px;
+  }
+
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    & li {
+      padding: 15px 0;
+    }
+
+    & .logo {
+      flex: 1;
+    }
+
+    & .items {
+      width: auto;
+      margin: 0 16px;
+      text-align: center;
+
+
+      @media all and (max-width: $tablette) {
+        width: 100%;
+      }
+
+      & .cta-filled-blue {
+        padding: 5px 10px;
+        display: block;
+      }
+    }
+
+  }
+}

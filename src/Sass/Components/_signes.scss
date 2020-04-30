@@ -1,0 +1,28 @@
+@import "../helpers/variables";
+
+#signes{
+    position: relative;
+    background-color: white;
+    padding: $XL;
+
+    h2{
+        font-family: $titre;
+        font-size: 50px;
+        color: $blue;
+        text-align: center;
+    }
+
+    span{
+        font-family: $labeur;
+        font-size: 20px;
+        color: $grey;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.16;
+        letter-spacing: normal;
+        text-align: center;
+        display: block;
+        margin-bottom: $L;
+    }
+}
