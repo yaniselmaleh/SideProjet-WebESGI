@@ -1,5 +1,8 @@
 @import "../helpers/variables.scss";
 
+main{
+    background-color: red;
+}
 *{
     margin: 0;
     padding:0;
@@ -19,4 +22,9 @@
 *|*:any-link {
     cursor: pointer !important;
     text-decoration: none !important;
+}
+
+body{
+    background-color: $smoke;
+    overflow-x: hidden;
 }
