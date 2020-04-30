@@ -6,6 +6,9 @@ import "../Sass/Components/_grid.scss";
 import "../Sass/Components/_reset.scss";
 import "../Sass/Components/_home.scss";
 
+import Signes from "../Components/Signes";
+import Soignants from "../Components/Soignants";
+
 import Bacterie1 from "../images/bacterie1.svg";
 import Bacterie2 from "../images/bacterie2.svg";
 export default class HomePage extends React.Component {
@@ -61,6 +64,19 @@ export default class HomePage extends React.Component {
                     </section>
                 </section>
 
+                <section>
+                    <Signes/>
+                </section>
+
+                <section>
+                    <Soignants/>
+                </section>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
                 {/* <select style={{width: '25%'}}>
                     {options}
                 </select> */}
