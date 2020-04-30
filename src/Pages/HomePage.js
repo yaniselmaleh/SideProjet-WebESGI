@@ -46,7 +46,9 @@ export default class HomePage extends React.Component {
                     {options}
                 </select>
 
-                <Cta name="En savoir plus ?" title="En savoir plus ?" className="filled-blue" url="/test"/>
+                <Cta name="En savoir plus ?" className="filled-blue" url="/test">
+                    En savoir plus ?
+                </Cta>
 
                 <section className="flex">
                     <article className="col-4 card">
