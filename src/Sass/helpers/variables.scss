@@ -1,2 +1,34 @@
 // Couleurs 
-$red : red;
+$white    : #FFFFFF;
+$smoke    : #FAFAFA;
+$black    : black;
+$grey     : #9CA1AF;
+$red      : #F15E6C;
+$green    : #63D094;
+$blue     : #1B2953;
+
+// Font
+$titre    : 'Abril Fatface', cursive;
+$labeur   : 'Roboto', sans-serif;
+
+// Shadow 
+$shadow   : 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+// Conteneur & Grid
+$conteneur: 80%;
+$gouttiere: 5%;
+
+// Padding
+$XL       : 10vh;
+$L        : 5vh;
+$M        : 3vh;
+$S        : 2vh;
+$XS       : .5vh;
+
+// Radius
+$radius-xl: 30px;
+$radius-l : 50px;
+
+// Responsive 
+$tablette : 'max-width: 1000px';
+$mobile   : 'max-width: 650px';
