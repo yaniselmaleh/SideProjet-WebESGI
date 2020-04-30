@@ -3,7 +3,11 @@ import {getApiEndpoint} from '../Components/api';
 import {numberWithCommas} from '../Utils/utils';
 
 import Cta from "../Components/layout/Cta.js"
+import Card from "../Components/layout/Card.js"
 
+import TestImg from "../logo.svg"
+import "../Sass/Components/_grid.scss";
+import "../Sass/Components/_reset.scss";
 export default class HomePageClass extends React.Component {
     constructor(props) {
         super(props);
@@ -42,6 +46,24 @@ export default class HomePageClass extends React.Component {
                 </select>
 
                 <Cta name="En savoir plus ?" title="En savoir plus ?" className="filled-blue" url="/test"/>
+                
+                <section className="flex">
+                    <article className="col-4 card">
+                        <Card title="Début de fièvre" texte="Présente chez 88% des malades, elle se situe autour de 37,5-38°" icon={TestImg} alt="alt de base"></Card>
+                    </article>
+
+                    <article className="col-4 card">
+                        <Card title="Début de fièvre" texte="Présente chez 88% des malades, elle se situe autour de 37,5-38°" icon={TestImg} alt="alt de base"></Card>
+                    </article>
+
+                    <article className="col-4 card">
+                        <Card title="Début de fièvre" texte="Présente chez 88% des malades, elle se situe autour de 37,5-38°" icon={TestImg} alt="alt de base"></Card>
+                    </article>
+
+                    <article className="col-4 card">
+                        <Card title="Début de fièvre" texte="Présente chez 88% des malades, elle se situe autour de 37,5-38°" icon={TestImg} alt="alt de base"></Card>
+                    </article>
+                </section>
             </div>
         )
     }
