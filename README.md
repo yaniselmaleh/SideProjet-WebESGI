@@ -3,7 +3,7 @@
 
 
 ##### Github 
-![GitHub last commit](https://img.shields.io/github/last-commit/yaniselmaleh/SideProjet-WebESGI?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/yaniselmaleh/SideProjet-WebESGI?color=green&label=Contributeur&style=for-the-badge) ![GitHub package.json version](https://img.shields.io/github/package-json/v/yaniselmaleh/SideProjet-WebESGI?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/yaniselmaleh/SideProjet-WebESGI?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/yaniselmaleh/SideProjet-WebESGI?style=for-the-badge) ![GitHub package.json version](https://img.shields.io/github/package-json/v/yaniselmaleh/SideProjet-WebESGI?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/yaniselmaleh/SideProjet-WebESGI?style=for-the-badge)
  -->
 
 
