@@ -3,7 +3,9 @@ import Bacterie1 from "../images/bacterie1.svg";
 import Bacterie2 from "../images/bacterie2.svg";
 import {getApiEndpoint} from "../Utils/api";
 import {numberWithCommas} from "../Utils/utils";
+
 import "../Sass/Components/_home.scss";
+import "../Sass/Components/_mouse.scss";
 
 export default class Home extends React.Component{
 
@@ -49,7 +51,9 @@ export default class Home extends React.Component{
                         <span><b id="nbDeaths">{nbDeaths}</b><br></br>Cas décédés</span>
                     </article>
                     <img src={Bacterie2} alt="bacterie" className="rotating"/>
+
                 </section>
+                    <div className="mouse"></div>
             </section>
         )
     }
