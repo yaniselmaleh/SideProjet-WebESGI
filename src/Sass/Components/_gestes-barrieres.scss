@@ -1,17 +1,20 @@
 @import "../helpers/variables";
 
-#soignants {
+#GestesBarrieres {
     position: relative;
-    background-color: $blue;
-    padding: $XL / 2;
+    background-color: $smoke;
+    padding: $L 0% $XL 0%;
+
+    .conteneur{
+        width: 70%;
+    }
 
     h2 {
-        color: $white;
         text-align: left;
         margin-bottom: $S;
     }
 
-    p {
+    #labeur {
         font-family: $labeur;
         font-size: 20px;
         color: $grey;
@@ -29,22 +32,17 @@
         padding: 1.5% 20px;
     }
 
+    div article:last-child{
+        margin-top: $M;
+    }
+
     @media screen and (min-width: $mobile-s) and (max-width: $tablette) {
-        img {
-            width: 70% !important;
-            margin: auto;
-            display: block;
+        div article:last-child{
+            margin-top: 0%;
         }
 
-        h2,
-        p {
-            text-align: center;
-        }
-
-        a {
-            margin: auto;
-            display: block;
-            width: max-content;
+        .mt-espace{
+            margin-bottom: $XL;
         }
     }
 }

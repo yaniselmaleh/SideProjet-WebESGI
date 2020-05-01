@@ -2,8 +2,6 @@
 
 .card {
     background-color: $white;
-    text-align: center;
-    padding: $M $S;
     border-radius: $radius-l;
     -webkit-border-radius: $radius-l;
     -moz-border-radius: $radius-l;
@@ -12,17 +10,38 @@
     line-height: 1.2;
     box-shadow: $shadow;
 
-    img {
-        padding: $S 0%;
+    &--small {
+        text-align: center;
+        padding: 8%;
+
+        @media screen and (min-width: $mobile-s) and (max-width: $tablette) {
+            padding: $S;
+            margin-top: $S;
+        }
     }
 
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: $titre;
-        margin-bottom: $S;
+    &--big {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 20px;
+
+        & div {
+            padding-left: 30px;
+            flex: 0 0 70%;
+        }
+
+        p,
+        span,
+        b,
+        strong {
+            padding: 10px 0;
+        }
+    }
+
+    img {
+        padding: $S 0%;
     }
 
     p,
@@ -32,5 +51,16 @@
         font-family: $labeur;
         display: block;
         margin: auto;
+        color: $grey;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $titre;
+        margin-bottom: $S;
+        color: $blue;
     }
 }

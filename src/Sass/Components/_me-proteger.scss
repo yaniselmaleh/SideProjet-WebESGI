@@ -1,3 +1,30 @@
-#me-proteger {
+@import "../helpers/variables";
 
+.me-proteger {
+  background-color: $white;
+  padding: $XL / 2;
+
+  &__title {
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: normal;
+    color: $blue;
+
+    &--green {
+      color: $green;
+    }
+
+    &--red {
+      color: $red;
+    }
+  }
+
+  @media screen and (min-width: $mobile-s) and (max-width: $tablette) {
+    .mt-espace {
+      margin-top: $XL;
+    }
+  }
 }

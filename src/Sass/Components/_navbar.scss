@@ -4,6 +4,10 @@
   background-color: $white;
   box-shadow: $shadow;
   padding: 5px 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
 
   @media all and (max-width: $tablette) {
     padding: 5px 30px;
@@ -24,40 +28,52 @@
       }
     }
 
-    & .logo {
-      flex: 1;
+  }
+
+  &__logo {
+    flex: 1;
+  }
+
+  &__item {
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+
+    @media all and (max-width: $laptop) {
+      margin: 0 10px;
     }
 
-    & .items {
-      width: auto;
-      margin: 0 16px;
-      text-align: center;
-      order: 3;
-
-      @media all and (max-width: $laptop) {
-        margin: 0 10px;
-      }
-
-      @media all and (max-width: $tablette) {
-        width: 100%;
-      }
-
-      & .cta-filled-blue {
-        padding: 5px 10px;
-        display: block;
-
-        @media all and (max-width: $laptop) {
-          display: inline;
-        }
-      }
-    }
-
-    & .bars {
+    @media all and (max-width: $tablette) {
+      width: 100%;
       display: none;
+    }
+
+    &.show {
+      display: block;
+    }
+
+    & .cta-filled-blue {
+      padding: 5px 10px;
+      display: block;
 
       @media all and (max-width: $laptop) {
-        display: block;
+        display: inline;
       }
     }
   }
+
+  &__bars {
+    display: none;
+    cursor: pointer;
+
+    @media all and (max-width: $tablette) {
+      display: block;
+    }
+  }
+
+  &__bars.show svg:before {
+    content: '\f00d';
+  }
+
 }

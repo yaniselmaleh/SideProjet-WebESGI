@@ -1,0 +1,49 @@
+@import "../helpers/variables.scss";
+
+#Attestation {
+    background-color: $blue;
+    padding: $L;
+
+    .conteneur {
+        position: relative;
+        background-color: red;
+        padding: 5%;
+        margin-top: -15vh;
+        display: block;
+        border-radius: $radius-l;
+        -webkit-border-radius: $radius-l;
+        -moz-border-radius: $radius-l;
+        -ms-border-radius: $radius-l;
+        -o-border-radius: $radius-l;
+        box-shadow: $shadow;
+
+        @media screen and (min-width: $mobile-s) and (max-width: $tablette) {
+            margin-top: -10vh;
+            background-color: $green;
+          }
+    }
+
+    .conteneur2{
+        width: 55%;
+        margin: auto;
+        a{
+            text-align: center;
+            padding: 2% 15px;
+        }
+    }
+}
+
+footer{
+    p{
+        font-family: $labeur;
+        color: $white;
+        font-weight: $bold;
+        background-color: $blue;
+        padding-bottom: $S;
+        text-align: center;
+        a{
+            font-weight: bold;
+            color: $smoke;
+        }
+    }
+}
