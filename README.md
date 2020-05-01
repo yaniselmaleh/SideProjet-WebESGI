@@ -46,16 +46,9 @@
 * [Covid19](https://github.com/ExpDev07/coronavirus-tracker-api)
 
 
+### Prérequis
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-Ceci est un exemple de la liste des éléments dont vous avez besoin pour utiliser le logiciel et comment les installer.
+Ceci est un exemple de la liste des éléments dont vous avez besoin pour utiliser le site et comment l'installer.
 ```sh
 npm install npm@latest -g
 ```
@@ -87,12 +80,6 @@ Yanis Elmaleh : [![LinkedIn][linkedin-shield]][linkedin-url1]
 Elie Bismuth : [![LinkedIn][linkedin-shield]][linkedin-url2]
 
 contact@yaniselmaleh.fr
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
