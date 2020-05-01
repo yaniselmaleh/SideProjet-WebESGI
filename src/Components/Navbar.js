@@ -22,6 +22,9 @@ const Navbar = () => {
                 <li className='items'>
                     <Cta className="filled-blue" url="/test">Faire un don</Cta>
                 </li>
+                <li className='bars'>
+                    <i className='fas fa-bars'></i>
+                </li>
             </ul>
         </nav>
     )
