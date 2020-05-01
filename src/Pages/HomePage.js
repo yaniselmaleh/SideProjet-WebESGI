@@ -11,6 +11,8 @@ import Soignants from "../Components/Soignants";
 
 import Bacterie1 from "../images/bacterie1.svg";
 import Bacterie2 from "../images/bacterie2.svg";
+import Navbar from "../Components/Navbar";
+
 export default class HomePage extends React.Component {
     constructor(props) {
         super(props);
@@ -41,35 +43,41 @@ export default class HomePage extends React.Component {
         // const options = countryList.map((country, index) => <option key={index} value={country}>{country}</option>);
 
         return (
-            <main>
-                <section id="home" className="flex-center">
-                    <h1>Codiv-19</h1>
-                    <p>Site créé par deux étudiants, ce site à pour but de regrouper<br></br>les informations utiles liées au covid 19</p>
+            <>
+                <header>
+                    <Navbar />
+                </header>
+                <main>
+                    <section id="home" className="flex-center">
+                        <h1>Codiv-19</h1>
+                        <p>Site créé par deux étudiants, ce site à pour but de regrouper<br></br>les informations utiles
+                            liées au covid 19</p>
 
-                    
-                    <section className="flex conteneur">
-                        <img src={Bacterie1} alt="bacterie"/>
-                        <article className="col-3">
-                            <span><b id="nbConfirmed">{nbConfirmed}</b><br></br>Cas guéris</span>
-                        </article>
 
-                        <article className="col-3">
-                            <span><b id="nbRecovered">{nbRecovered}</b><br></br>Cas décédés</span>
-                        </article>
+                        <section className="flex conteneur">
+                            <img src={Bacterie1} alt="bacterie"/>
+                            <article className="col-3">
+                                <span><b id="nbConfirmed">{nbConfirmed}</b><br></br>Cas guéris</span>
+                            </article>
 
-                        <article className="col-3">
-                            <span><b id="nbDeaths">{nbDeaths}</b><br></br>Cas confirmé</span>
-                        </article>
-                        <img src={Bacterie2} alt="bacterie"/>
+                            <article className="col-3">
+                                <span><b id="nbRecovered">{nbRecovered}</b><br></br>Cas décédés</span>
+                            </article>
+
+                            <article className="col-3">
+                                <span><b id="nbDeaths">{nbDeaths}</b><br></br>Cas confirmé</span>
+                            </article>
+                            <img src={Bacterie2} alt="bacterie"/>
+                        </section>
                     </section>
-                </section>
 
                     <Signes/>
                     <Soignants/>
-                {/* <select style={{width: '25%'}}>
+                    {/* <select style={{width: '25%'}}>
                     {options}
                 </select> */}
-            </main>
+                </main>
+            </>
         )
     }
 }
