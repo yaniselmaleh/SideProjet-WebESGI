@@ -18,21 +18,27 @@ const MeProteger = () => (
         </span>
 
         <div className='flex conteneur me-proteger__wrapper'>
+
             <article className="col-2">
                 <span className='me-proteger__title'>Ce que <span
                     className='me-proteger__title--green'>je devrai faire</span></span>
+
                 <Card className='card card--big mt-3' icon={HomeStay} alt="Début de fièvre" title="Début de fièvre">
                     Chez 88% des malades, elle se situe autour de 37,5-38°
                 </Card>
+
                 <Card className='card card--big mt-3' icon={Spreading} alt="Début de fièvre" title="Incubation du virus">
                     Le délai d’incubation du coronavirus COVID-19 est de 3 à 5 jours en général, il peut toutefois
                     s’étendre jusqu’à 14 jours
                 </Card>
+
                 <Card className='card card--big mt-3' icon={HomeQuarantine} alt="Début de fièvre"
                       title="Les différents gestes ">
                     Lavez-vous très régulièrement les mains plusieurs lave très régulièrement les mains plusieurs
                 </Card>
+
             </article>
+
             <article className="col-2">
                 <span className='me-proteger__title'>Ce que <span className='me-proteger__title--red'> je ne devrai pas faire</span></span>
                 <Card className='card card--big mt-3' icon={Cough} alt="Début de fièvre"

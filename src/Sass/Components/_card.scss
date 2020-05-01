@@ -21,6 +21,10 @@
         align-items: center;
         padding: 10px 20px;
 
+        & div {
+            padding-left: 30px;
+        }
+
         p, span, b, strong {
             padding: 10px 0;
         }
