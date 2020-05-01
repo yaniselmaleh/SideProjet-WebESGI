@@ -34,7 +34,6 @@
 
 [![Screen Shot][product-screenshot]](https://example.com)
 
-
 #### Construit avec :
 * [React](https://fr.reactjs.org/)
 * [Sass](https://sass-lang.com/), pas de "framework css".
@@ -95,10 +94,6 @@ contact@yaniselmaleh.fr
 * [Img Shields](https://shields.io)
 
 
-
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
@@ -114,4 +109,4 @@ contact@yaniselmaleh.fr
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url1]: https://linkedin.com/in/yaniselmaleh
 [linkedin-url2]: https://www.linkedin.com/in/elie-bismuth/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: src/images/Maquette.png
