@@ -16,7 +16,7 @@ const MeProteger = () => (
             je réduis strictement les sorties sauf pour ravitaillement alimentaire
         </span>
 
-        <div className='flex me-proteger__wrapper'>
+        <div className='flex conteneur'>
 
             <article className="col-2">
                 <span className='me-proteger__title'>Ce que <span

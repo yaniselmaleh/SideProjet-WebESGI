@@ -1,11 +1,8 @@
 @import "../helpers/variables";
 
 .me-proteger {
-  padding: $XL * 2;
-
-  &__wrapper {
-    padding: $L 0;
-  }
+  padding: $XL / 2;
+  background-color: $white;
 
   &__title {
     font-size: 25px;
