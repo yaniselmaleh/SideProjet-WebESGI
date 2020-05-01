@@ -15,7 +15,7 @@ export default class Soignants extends React.Component {
                     </aside>
 
                     <article className="col-2">
-                        <h2>Urgence Covid-19,<br></br>aidons nos soignants !</h2>
+                        <h2 className="title-big">Urgence Covid-19,<br></br>aidons nos soignants !</h2>
                         <p>Face à la situation sanitaire actuelle sans précédent, la Fondation est pleinement mobilisée pour apporter un soutien complémentaire, en partenariat avec la Fédération Hospitalière de France, aux hôpitaux français.</p>
                         <Cta className="filled-white">Faire un don </Cta>
                     </article>
