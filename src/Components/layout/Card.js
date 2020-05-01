@@ -1,6 +1,5 @@
 import React from 'react'
 import "../../Sass/Components/_card.scss"
-import "../../Sass/Components/_grid.scss"
 
 const Card = ({icon, alt, title, texte}) => (
     <React.Fragment>
