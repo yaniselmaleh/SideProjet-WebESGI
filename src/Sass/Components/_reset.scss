@@ -21,6 +21,16 @@
     text-decoration: none !important;
 }
 
+::selection{
+    background-color: $blue;
+    color: $white;
+}
+  
+::-moz-selection {
+    background-color: $blue;
+    color: $white;
+}
+
 body {
     background-color: $smoke;
     overflow-x: hidden;

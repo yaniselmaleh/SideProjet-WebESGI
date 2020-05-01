@@ -3,7 +3,7 @@
 #GestesBarrieres {
     position: relative;
     background-color: $smoke;
-    padding: $L $XL $XL $XL;
+    padding: $L 0% $XL 0%;
 
     .conteneur{
         width: 70%;
@@ -39,6 +39,10 @@
     @media screen and (min-width: $mobile-s) and (max-width: $tablette) {
         div article:last-child{
             margin-top: 0%;
+        }
+
+        .mt-espace{
+            margin-bottom: $XL;
         }
     }
 }
