@@ -20,7 +20,7 @@ const Signes = () => (
                     icon={Fievre}
                     alt="Début de fièvre"
                     title="Début de fièvre"
-                    texte="Chez 88% des malades, elle se situe autour de 37,5-38°"
+                    texte="Un mal de gorge commelors d’une angine"
                 />
             </article>
 
@@ -38,16 +38,16 @@ const Signes = () => (
                     icon={MauxDeTete}
                     alt="Maux de tête"
                     title="Maux de tête"
-                    texte="14 % des malades présentent des maux de tête violents"
+                    texte="Un mal de gorge commelors d’une angine"
                 />
             </article>
 
             <article className="col-4 card">
                 <Card
                     icon={DifficultesRespiratoire}
-                    alt="Difficultés respiratoires"
-                    title="Difficultés respiratoires"
-                    texte="Signe grave touchant 1/6p contractant la maladie"
+                    alt="Mal de gorge"
+                    title="Mal de gorge"
+                    texte="Un mal de gorge commelors d’une angine"
                 />
             </article>
         </div>

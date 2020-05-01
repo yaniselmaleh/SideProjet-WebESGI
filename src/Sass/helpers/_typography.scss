@@ -1,22 +1,22 @@
 @import "variables";
 
 .title-big {
-  font-family: $titre;
-  font-size: 50px;
-  color: $blue;
-  text-align: center;
+  font-family   : $titre;
+  font-size     : 50px;
+  color         : $blue;
+  text-align    : center;
 }
 
 .title-small {
-  font-family: $labeur;
-  font-size: 20px;
-  color: $grey;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.16;
+  font-family   : $labeur;
+  font-size     : 20px;
+  color         : $grey;
+  font-weight   : normal;
+  font-stretch  : normal;
+  font-style    : normal;
+  line-height   : 1.16;
   letter-spacing: normal;
-  text-align: center;
-  display: block;
-  margin-bottom: $L;
+  text-align    : center;
+  display       : block;
+  margin-bottom : $L;
 }

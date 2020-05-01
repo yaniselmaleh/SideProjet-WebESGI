@@ -1,9 +1,8 @@
 @import "../helpers/variables.scss";
 
-
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -22,7 +21,7 @@
     text-decoration: none !important;
 }
 
-body{
+body {
     background-color: $smoke;
     overflow-x: hidden;
 }
