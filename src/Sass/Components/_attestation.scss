@@ -17,6 +17,15 @@
         -o-border-radius: $radius-l;
         box-shadow: $shadow;
     }
+
+    .conteneur2{
+        width: 55%;
+        margin: auto;
+        a{
+            text-align: center;
+            padding: 2% 15px;
+        }
+    }
 }
 
 footer{
@@ -27,6 +36,9 @@ footer{
         background-color: $blue;
         padding-bottom: $S;
         text-align: center;
-
+        a{
+            font-weight: bold;
+            color: $smoke;
+        }
     }
 }
