@@ -1,7 +1,6 @@
 import React from "react";
 import '../Sass/Components/_me-proteger.scss'
 import Card from "./layout/Card";
-import Fievre from "../images/signes/fievre.svg";
 import World from "../images/meproteger/20-world.svg";
 import HomeStay from "../images/meproteger/coronovirus-home-stay.svg";
 import Cough from "../images/meproteger/cough.svg";
@@ -17,7 +16,7 @@ const MeProteger = () => (
             je réduis strictement les sorties sauf pour ravitaillement alimentaire
         </span>
 
-        <div className='flex conteneur me-proteger__wrapper'>
+        <div className='flex me-proteger__wrapper'>
 
             <article className="col-2">
                 <span className='me-proteger__title'>Ce que <span
