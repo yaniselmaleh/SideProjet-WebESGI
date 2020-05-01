@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import {ReactComponent as Logo} from "../images/nav-logo.svg";
 import Cta from "./layout/Cta";
 import "../Sass/Components/_navbar.scss";

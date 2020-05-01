@@ -7,6 +7,7 @@ import Signes from "../Components/Signes";
 import Soignants from "../Components/Soignants";
 import Navbar from "../Components/Navbar";
 import Home from "../Components/Home";
+import MeProteger from "../Components/meProteger";
 
 const HomePage = () => (
     <>
@@ -17,6 +18,7 @@ const HomePage = () => (
             <Home/>
             <Signes/>
             <Soignants/>
+            <MeProteger />
             {/* <select style={{width: '25%'}}>
                     {options}
                 </select> */}
