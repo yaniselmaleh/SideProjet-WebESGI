@@ -36,19 +36,19 @@ export default class Home extends React.Component{
 
 
                 <section className="flex conteneur">
-                    <img src={Bacterie1} alt="bacterie"/>
+                    <img src={Bacterie1} alt="bacterie" className="rotating"/>
                     <article className="col-3">
-                        <span><b id="nbConfirmed">{nbConfirmed}</b><br></br>Cas guéris</span>
+                        <span><b id="nbConfirmed">{nbConfirmed}</b><br></br>Cas confirmé</span>
                     </article>
 
                     <article className="col-3">
-                        <span><b id="nbRecovered">{nbRecovered}</b><br></br>Cas décédés</span>
+                        <span><b id="nbRecovered">{nbRecovered}</b><br></br>Cas guéris</span>
                     </article>
 
                     <article className="col-3">
-                        <span><b id="nbDeaths">{nbDeaths}</b><br></br>Cas confirmé</span>
+                        <span><b id="nbDeaths">{nbDeaths}</b><br></br>Cas décédés</span>
                     </article>
-                    <img src={Bacterie2} alt="bacterie"/>
+                    <img src={Bacterie2} alt="bacterie" className="rotating"/>
                 </section>
             </section>
         )
