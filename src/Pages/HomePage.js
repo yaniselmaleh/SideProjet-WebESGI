@@ -1,6 +1,4 @@
 import React from "react";
-import "../Sass/Components/_grid.scss";
-import "../Sass/Components/_reset.scss";
 import "../Sass/Components/_home.scss";
 
 import Signes from "../Components/Signes";

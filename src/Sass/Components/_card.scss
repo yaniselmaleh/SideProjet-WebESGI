@@ -2,8 +2,6 @@
 
 .card {
     background-color: $white;
-    text-align: center;
-    padding: $M $S;
     border-radius: $radius-l;
     -webkit-border-radius: $radius-l;
     -moz-border-radius: $radius-l;
@@ -12,25 +10,41 @@
     line-height: 1.2;
     box-shadow: $shadow;
 
-    img {
+    &--small {
+        text-align: center;
+        padding: $M $S;
+    }
+
+    &--big {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 20px;
+
+        & div {
+            padding-left: 30px;
+            flex: 0 0 70%;
+        }
+
+        p, span, b, strong {
+            padding: 10px 0;
+        }
+    }
+
+    img{
         padding: $S 0%;
     }
 
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: $titre;
-        margin-bottom: $S;
-    }
-
-    p,
-    span,
-    b,
-    strong {
+    p, span, b, strong {
         font-family: $labeur;
         display: block;
         margin: auto;
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-family: $titre;
+        margin-bottom: $S;
+        color: $blue;
     }
 }
