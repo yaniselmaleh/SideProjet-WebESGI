@@ -1,11 +1,11 @@
 @import "../helpers/variables";
 
-#soignants{
+#soignants {
     position: relative;
     background-color: $blue;
-    padding: $L;
+    padding: $XL;
 
-    h2{
+    h2 {
         font-family: $titre;
         font-size: 50px;
         color: $white;
@@ -13,7 +13,7 @@
         margin-bottom: $S;
     }
 
-    p{
+    p {
         font-family: $labeur;
         font-size: 20px;
         color: $grey;
@@ -25,5 +25,28 @@
         text-align: left;
         display: block;
         margin-bottom: $L;
+    }
+
+    a {
+        padding: 1.5% 20px;
+    }
+
+    @media screen and (min-width: $mobile-s) and (max-width: $tablette) {
+        img {
+            width: 70% !important;
+            margin: auto;
+            display: block;
+        }
+
+        h2,
+        p {
+            text-align: center;
+        }
+
+        a {
+            margin: auto;
+            display: block;
+            width: max-content;
+        }
     }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import {ReactComponent as Logo} from "../images/nav-logo.svg";
 import Cta from "./layout/Cta";
 import "../Sass/Components/_navbar.scss";
@@ -21,6 +20,9 @@ const Navbar = () => {
                 </li>
                 <li className='items'>
                     <Cta className="filled-blue" url="/test">Faire un don</Cta>
+                </li>
+                <li className='bars'>
+                    <i className='fas fa-bars'></i>
                 </li>
             </ul>
         </nav>
