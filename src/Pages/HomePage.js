@@ -7,6 +7,7 @@ import Navbar from "../Components/Navbar";
 import Home from "../Components/Home";
 import MeProteger from "../Components/meProteger";
 import GestesBarrieres from "../Components/GestesBarrieres";
+import Attestation from "../Components/Attestation";
 
 const HomePage = () => (
     <>
@@ -19,9 +20,13 @@ const HomePage = () => (
             <Soignants/>
             <MeProteger />
             <GestesBarrieres/>
-            {/* <select style={{width: '25%'}}>
+            <Attestation/>
+
+            {/*
+                <select style={{width: '25%'}}>
                     {options}
-                </select> */}
+                </select>
+            */}
         </main>
     </>
 );
