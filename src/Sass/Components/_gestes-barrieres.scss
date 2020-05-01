@@ -32,9 +32,9 @@
         padding: 1.5% 20px;
     }
 
-    div article:last-child{
-        margin-top: $XL;
-    }
+    // div article:last-child{
+    //     margin-top: $L;
+    // }
 
     @media screen and (min-width: $mobile-s) and (max-width: $tablette) {
         div article:last-child{
