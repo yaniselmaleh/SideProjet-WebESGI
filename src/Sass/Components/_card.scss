@@ -13,6 +13,11 @@
     &--small {
         text-align: center;
         padding: 8%;
+
+        @media screen and (min-width: $mobile-s) and (max-width: $tablette) {
+            padding: $S;
+            margin-top: $S;
+        }
     }
 
     &--big {
@@ -27,22 +32,33 @@
             flex: 0 0 70%;
         }
 
-        p, span, b, strong {
+        p,
+        span,
+        b,
+        strong {
             padding: 10px 0;
         }
     }
 
-    img{
+    img {
         padding: $S 0%;
     }
 
-    p, span, b, strong {
+    p,
+    span,
+    b,
+    strong {
         font-family: $labeur;
         display: block;
         margin: auto;
+        color: $grey;
     }
 
-    h2, h3, h4, h5, h6 {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: $titre;
         margin-bottom: $S;
         color: $blue;

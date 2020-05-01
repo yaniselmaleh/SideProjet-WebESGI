@@ -43,7 +43,7 @@ export default class Home extends React.Component{
                         <span><b id="nbConfirmed">{nbConfirmed}</b><br></br>Cas confirmé</span>
                     </article>
 
-                    <article className="col-3">
+                    <article className="col-3" id="middle">
                         <span><b id="nbRecovered">{nbRecovered}</b><br></br>Cas guéris</span>
                     </article>
 

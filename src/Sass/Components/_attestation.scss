@@ -6,7 +6,7 @@
 
     .conteneur {
         position: relative;
-        background-color: $white;
+        background-color: red;
         padding: 5%;
         margin-top: -15vh;
         display: block;
@@ -16,6 +16,11 @@
         -ms-border-radius: $radius-l;
         -o-border-radius: $radius-l;
         box-shadow: $shadow;
+
+        @media screen and (min-width: $mobile-s) and (max-width: $tablette) {
+            margin-top: -10vh;
+            background-color: $green;
+          }
     }
 
     .conteneur2{
