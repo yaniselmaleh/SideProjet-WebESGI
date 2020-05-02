@@ -9,7 +9,7 @@ import HomeQuarantine from "../images/meproteger/home-quarantine.svg";
 import Spreading from "../images/meproteger/spreading.svg";
 
 const MeProteger = () => (
-    <section className='me-proteger'>
+    <section className='me-proteger' id='me-proteger'>
         <h2 className='title-big'>Comment me protéger du Covid-19</h2>
         <span className='title-small'>
             Pour me protéger moi et mes proches, je reste isolé à domicile <br/>

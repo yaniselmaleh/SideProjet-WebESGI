@@ -21,7 +21,7 @@ const Navbar = () => {
                     </Cta>
                 </li>
                 <li className='navbar__item'>
-                    <Cta className="filled-white" url="/test">Comment le Covid-19 se transmet</Cta>
+                    <Cta className="filled-white" url="/#me-proteger">Comment le Covid-19 se transmet</Cta>
                 </li>
                 <li className='navbar__item'>
                     <Cta className="filled-white" url="/#signes">Signes du Covid-19</Cta>
