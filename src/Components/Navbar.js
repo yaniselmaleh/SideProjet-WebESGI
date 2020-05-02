@@ -15,7 +15,11 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <ul>
-                <li className='navbar__logo'><Logo/></li>
+                <li className='navbar__logo'>
+                    <Cta url={window.location.origin}>
+                        <Logo/>
+                    </Cta>
+                </li>
                 <li className='navbar__item'>
                     <Cta className="filled-white" url="/test">Comment le Covid-19 se transmet</Cta>
                 </li>
@@ -26,7 +30,8 @@ const Navbar = () => {
                     <Cta className="filled-white" url="/#GestesBarrieres">Gestes barrières</Cta>
                 </li>
                 <li className='navbar__item'>
-                    <Cta className="filled-blue" url="https://don.fondationhopitaux.fr/" target='_blank'>Faire un don</Cta>
+                    <Cta className="filled-blue" url="https://don.fondationhopitaux.fr/" target='_blank'>Faire un
+                        don</Cta>
                 </li>
                 <li className='navbar__bars' onClick={toggleNavbar}>
                     {<BurgerMenu/>}

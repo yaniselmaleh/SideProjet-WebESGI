@@ -15,7 +15,7 @@ const GestesBarrieres = () => (
             <article className="col-2 mt-espace">
                 <h2 className="title-big">Les différents gestes<br></br>barrières à adopter !</h2>
                 <p id="labeur">Évitez de vous rendre dans un établissement de ‎santé si cela n’est pas nécessaire, pour que les ‎systèmes de santé  fonctionnent de la manière la ‎plus efficace possible et  puissent protéger tout le ‎monde, vous y compris.</p>
-                <Cta className="filled-blue" url="https://don.fondationhopitaux.fr/" target='_blank'>Faire un don </Cta>
+                <Cta className="filled-blue" url="https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barrieres_fr.pdf" target='_blank'>En savoir plus </Cta>
             </article>
 
             <section className="col-2">
