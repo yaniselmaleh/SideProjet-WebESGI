@@ -20,13 +20,13 @@ const Navbar = () => {
                     <Cta className="filled-white" url="/test">Comment le Covid-19 se transmet</Cta>
                 </li>
                 <li className='navbar__item'>
-                    <Cta className="filled-white" url="/test">Signes du Covid-19</Cta>
+                    <Cta className="filled-white" url="/#signes">Signes du Covid-19</Cta>
                 </li>
                 <li className='navbar__item'>
-                    <Cta className="filled-white" url="/test">Gestes barrières</Cta>
+                    <Cta className="filled-white" url="/#GestesBarrieres">Gestes barrières</Cta>
                 </li>
                 <li className='navbar__item'>
-                    <Cta className="filled-blue" url="/test">Faire un don</Cta>
+                    <Cta className="filled-blue" url="https://don.fondationhopitaux.fr/" target='_blank'>Faire un don</Cta>
                 </li>
                 <li className='navbar__bars' onClick={toggleNavbar}>
                     {<BurgerMenu/>}

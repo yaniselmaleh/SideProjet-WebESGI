@@ -14,8 +14,8 @@ const GestesBarrieres = () => (
                 <p className="title-small">Un dispositif de création numérique de l’attestation de déplacement dérogatoire est désormais disponible, en complément du dispositif papier toujours valide.</p>
                         
                 <div className="flex conteneur2">
-                    <Cta className="unfilled col-2">Version Papier</Cta>
-                    <Cta className="filled-blue col-2">Version Numérique</Cta>
+                    <Cta className="unfilled col-2" url="https://www.gouvernement.fr/sites/default/files/contenu/piece-jointe/2020/03/attestation-deplacement-fr-20200324.pdf" target='_blank'>Version Papier</Cta>
+                    <Cta className="filled-blue col-2" url="https://media.interieur.gouv.fr/deplacement-covid-19/" target='_blank'>Version Numérique</Cta>
                 </div>
             </div>
         </section>

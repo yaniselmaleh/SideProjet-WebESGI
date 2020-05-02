@@ -1,18 +1,17 @@
 import React  from 'react'
-import { Link } from "react-router-dom";
 import '../../Sass/Components/_cta.scss';
 
-const Cta = ({children, url, className, title}) => (
+const Cta = ({children, url, className, title, ...otherProps}) => (
     <React.Fragment>
-        <Link
-            to={url}
+        <a
             href={url}
             className={`cta-${className}`}
             title={title}
             target=""
+            {...otherProps}
         >
             {children}
-        </Link>
+        </a>
     </React.Fragment>
 )
 
