@@ -8,9 +8,12 @@ import HandSoap from "../images/gestes/hand-soap.svg";
 import Distance from "../images/gestes/distance.svg";
 import Mouchoir from "../images/gestes/mouchoir.svg";
 import Contact from "../images/gestes/contact-main.svg";
+import Bacterie6 from "../images/bacterie6.svg"
+
 
 const GestesBarrieres = () => (
     <section id="GestesBarrieres">
+        <img src={Bacterie6} alt="bacterie 6" className="bacterie"/>
         <div className="flex conteneur">
             <article className="col-2 mt-espace">
                 <h2 className="title-big">Les différents gestes<br></br>barrières à adopter !</h2>

@@ -1,7 +1,13 @@
 @import "../helpers/variables";
 
 #signes {
-    position: relative;
     background-color: white;
     padding: $XL / 1.5;
+    position: relative;
+
+    .bacterie{
+        position: absolute;
+        right: -7%;
+        top: 7%;
+      }
 }
