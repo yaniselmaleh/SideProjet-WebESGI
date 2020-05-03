@@ -23,9 +23,11 @@
     & li {
       padding: 15px 0;
 
-      & i {
-        font-size: 23px;
+      a{
+        font-family: $labeur!important;
+        font-weight: $bold;
       }
+
     }
 
   }
@@ -36,7 +38,7 @@
 
   &__item {
     width: auto;
-    margin: 0 16px;
+    // margin: 0 16px;
     text-align: center;
     order: 3;
 
