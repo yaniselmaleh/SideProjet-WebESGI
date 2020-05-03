@@ -7,9 +7,12 @@ import Cough from "../images/meproteger/cough.svg";
 import Crowd from "../images/meproteger/crowd-public.svg";
 import HomeQuarantine from "../images/meproteger/home-quarantine.svg";
 import Spreading from "../images/meproteger/spreading.svg";
+import Bacterie4 from "../images/bacterie4.svg"
+import Bacterie5 from "../images/bacterie5.svg"
 
 const MeProteger = () => (
     <section className='me-proteger' id='me-proteger'>
+        <img src={Bacterie4} alt="bacterie 4" className="bacterieTop"/>
         <h2 className='title-big'>Comment me protéger du Covid-19</h2>
         <span className='title-small'>
             Pour me protéger moi et mes proches, je reste isolé à domicile <br/>
@@ -17,6 +20,7 @@ const MeProteger = () => (
         </span>
 
         <div className='flex conteneur mt-espace'>
+
             <article className="col-2">
                 <span className='me-proteger__title'>Ce que <span
                     className='me-proteger__title--green'>je devrai faire</span></span>
@@ -49,6 +53,7 @@ const MeProteger = () => (
                 </Card>
             </article>
         </div>
+        <img src={Bacterie5} alt="bacterie 5" className="bacterieBot"/>
     </section>
 );
 

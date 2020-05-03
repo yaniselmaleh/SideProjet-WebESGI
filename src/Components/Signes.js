@@ -8,9 +8,12 @@ import Fievre from "../images/signes/fievre.svg";
 import Toux from "../images/signes/toux.svg";
 import MauxDeTete from "../images/signes/maux-de-tete.svg";
 import DifficultesRespiratoire from "../images/signes/difficultes-respiratoires.svg";
+import Bacterie3 from "../images/bacterie3.svg"
+
 
 const Signes = () => (
     <section id="signes">
+        <img src={Bacterie3} alt="bacterie 3" className="bacterie"/>
         <h2 className='title-big'>Quels sont les signes</h2>
         <span className='title-small'>Comment se manifestent les signes d’infections ?</span>
 
@@ -35,7 +38,7 @@ const Signes = () => (
 
             <article className="col-4">
                 <Card className='card card--small' icon={DifficultesRespiratoire} alt="Difficultés respiratoires" title="Difficultés respiratoires">
-                    Signe grave touchant 1/6p contractant la maladie
+                    Une sensation de gêne respiratoire
                 </Card>
             </article>
         </div>

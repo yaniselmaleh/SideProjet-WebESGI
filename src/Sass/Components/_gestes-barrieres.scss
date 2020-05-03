@@ -1,9 +1,15 @@
 @import "../helpers/variables";
 
 #GestesBarrieres {
-    position: relative;
     background-color: $smoke;
     padding: $L 0% $XL 0%;
+    position: relative;
+
+    .bacterie{
+        position: absolute;
+        left: 0%;
+        bottom: 15%;
+    }
 
     .conteneur{
         width: 70%;
