@@ -33,10 +33,7 @@ export default class Home extends React.Component{
         return (
             <section id="home" className="flex-center">
                 <h1>Codiv-19</h1>
-                <p>Site créé par deux étudiants, ce site à pour but de regrouper<br></br>les informations utiles
-                    liées au covid 19</p>
-
-
+                <p>Site créé par deux étudiants, ce site à pour but de regrouper<br></br>les informations utiles liées au covid 19</p>
                 <section className="flex conteneur">
                     <img src={Bacterie1} alt="bacterie" className="rotating"/>
                     <article className="col-3">
@@ -51,7 +48,6 @@ export default class Home extends React.Component{
                         <span><b id="nbDeaths">{nbDeaths}</b><br></br>Cas décédés</span>
                     </article>
                     <img src={Bacterie2} alt="bacterie" className="rotating"/>
-
                 </section>
                     <div className="mouse"></div>
             </section>

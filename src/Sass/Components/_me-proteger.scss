@@ -2,7 +2,25 @@
 
 .me-proteger {
   background-color: $white;
-  padding: $XL / 2;
+  padding: $XL / 1.5;
+  position: relative;
+
+  .bacterieTop{
+    position: absolute;
+    left: -7%;
+    top: 7%;
+  }
+
+  .bacterieBot{
+    position: absolute;
+    right: -7%;
+    bottom: 7%;
+    z-index: 0;
+  }
+
+  article{
+    z-index: 2;
+  }
 
   &__title {
     font-size: 25px;
