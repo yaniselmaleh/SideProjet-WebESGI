@@ -35,7 +35,7 @@ const Signes = () => (
 
             <article className="col-4">
                 <Card className='card card--small' icon={DifficultesRespiratoire} alt="Difficultés respiratoires" title="Difficultés respiratoires">
-                    Signe grave touchant 1/6p contractant la maladie
+                    Une sensation de gêne respiratoire
                 </Card>
             </article>
         </div>
