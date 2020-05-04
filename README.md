@@ -24,7 +24,7 @@
 
 ![npm](https://img.shields.io/npm/v/npm?style=for-the-badge)![GitHub package.json version](https://img.shields.io/github/package-json/v/yaniselmaleh/SideProjet-WebESGI?style=for-the-badge)![GitHub contributors](https://img.shields.io/github/contributors/yaniselmaleh/SideProjet-WebESGI?color=green&label=Contributeur&style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/yaniselmaleh/SideProjet-WebESGI?style=for-the-badge)![GitHub last commit](https://img.shields.io/github/last-commit/yaniselmaleh/SideProjet-WebESGI?style=for-the-badge)![Netlify](https://img.shields.io/netlify/98e3e1e1-b718-4283-99ad-bd7f92b39cf5?label=NETLIFY%20BUILD&style=for-the-badge)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/98e3e1e1-b718-4283-99ad-bd7f92b39cf5/deploy-status)](https://app.netlify.com/sites/production-elie-yanis/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/98e3e1e1-b718-4283-99ad-bd7f92b39cf5/deploy-status)](https://app.netlify.com/sites/infoscovid19/deploys)
 </center>
   </p>
 </p>
