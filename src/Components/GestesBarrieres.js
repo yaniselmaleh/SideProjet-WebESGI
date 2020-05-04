@@ -24,7 +24,7 @@ const GestesBarrieres = () => (
             <section className="col-2">
                 <div className="flex">
                     <article className="col-2">
-                        <Card className='card card--small' icon={HandSoap} alt="Labez-vous les mains" title="Labez-vous les mains">
+                        <Card className='card card--small' icon={HandSoap} alt="Lavez-vous les mains" title="Lavez-vous les mains">
                             Lavez-vous très régulièrement les mains plusieurs fois
                         </Card>
                     </article>
