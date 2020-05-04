@@ -32,7 +32,7 @@ export default class Home extends React.Component{
         // const options = countryList.map((country, index) => <option key={index} value={country}>{country}</option>);
         return (
             <section id="home" className="flex-center">
-                <h1>Codiv-19</h1>
+                <h1>Codid-19</h1>
                 <p>Ce site à été créé par deux étudiants, dans le but de regrouper <br></br>les informations utiles liées au covid 19</p>
                 <section className="flex conteneur">
                     <img src={Bacterie1} alt="bacterie" className="rotating"/>
