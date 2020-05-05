@@ -17,7 +17,7 @@
   <p align="center">
     Site créé par deux étudiants, ce site à pour but de regrouper<br/>les informations utiles liées au covid 19
     <br/>
-    <a href="https://production-elie-yanis.netlify.app/"><strong>👉 Voir le site 👈</strong></a>
+    <a href="https://infoscovid19.netlify.app/"><strong>👉 Voir le site 👈</strong></a>
     <br/>
     <br/>
 <center>
